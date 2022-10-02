@@ -18,7 +18,7 @@ public class ReadTextFile {
 				System.out.println(line);
 				buf.append(line + "\n");
 			}
-			//System.out.println("buf------\n" + buf);
+
 			String temp = buf.toString();
 			lines = temp.split("\n");
 			br.close();
