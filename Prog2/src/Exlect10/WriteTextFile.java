@@ -8,19 +8,19 @@ import javax.swing.JOptionPane;
 
 public class WriteTextFile {
 
-	public WriteTextFile(int id, String name, String Description, int price, int stock) {
+	public WriteTextFile(int goodsid, String goodsname, String goodsDescription, int goodsprice, int goodsstock, boolean ch) {
 		System.out.println("WriteTextFile.main()");
 		String fileName = "files/goods.csv";
 		BufferedWriter bw = null;
 		FileWriter fw = null;
 		try {
-			bw = new BufferedWriter(new FileWriter(fileName, true));
+			bw = new BufferedWriter(new FileWriter(fileName, ch));
 
-			bw.write(id + "," + name + "," + Description + "," + price + "," + stock);
+			bw.write(goodsid + "," + goodsname + "," + goodsDescription + "," + goodsprice + "," + goodsstock);
 			bw.write("\n");
 			bw.flush();
 			bw.close();
-			JOptionPane.showMessageDialog(null, "Success");
+			
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}

@@ -31,7 +31,7 @@ public class Menu extends JPanel implements ActionListener {
 		super();
 		
 		addForm = new AddForm(frame);
-//		editForm = new EditForm(frame);
+		editForm = new EditForm(frame);
 //		viewForm = new ViewForm(frame);
 //		deleteForm = new DeleteForm(frame);
 		
@@ -85,10 +85,9 @@ public class Menu extends JPanel implements ActionListener {
 		if(actionCommand.equals(addString)) {
 			System.out.println("equals " + addString);
 			addForm.setVisible(true);
-		
-//		}else if(actionCommand.equals(editString)) {
-//			System.out.println("equals " + editString);
-//			editForm.setVisible(true);
+		}else if(actionCommand.equals(editString)) {
+			System.out.println("equals " + editString);
+			editForm.setVisible(true);
 //		}else if(actionCommand.equals(viewString)) {
 //			System.out.println("equals " + viewString);
 //			viewForm.setVisible(true);

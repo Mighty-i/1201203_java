@@ -124,18 +124,18 @@ public class AddForm extends JDialog implements ActionListener{
 			System.out.println("actionCommand:" + addString);
 			try {
 				// retrieve values from text fields.
-				int id = Integer.parseInt(idTxt.getText());
-				String name = nameTxt.getText();
-				String Description = DescriptionTxt.getText();
-				int price = Integer.parseInt(priceTxt.getText());
-				int stock = Integer.parseInt(stockTxt.getText());
-				WriteTextFile wtf = new WriteTextFile(id, name, Description, price, stock);
+				int goodsid = Integer.parseInt(idTxt.getText());
+				String goodsname = nameTxt.getText();
+				String goodsDescription = DescriptionTxt.getText();
+				int goodsprice = Integer.parseInt(priceTxt.getText());
+				int goodsstock = Integer.parseInt(stockTxt.getText());
+				WriteTextFile wtf = new WriteTextFile(goodsid, goodsname, goodsDescription, goodsprice, goodsstock, true);
 				
-				System.out.println("id:"+ id);
-				System.out.println("name:"+ name);
-				System.out.println("Description:"+ Description);
-				System.out.println("price:"+ price);
-				System.out.println("stock:"+stock);
+				System.out.println("id:"+ goodsid);
+				System.out.println("name:"+ goodsname);
+				System.out.println("Description:"+ goodsDescription);
+				System.out.println("price:"+ goodsprice);
+				System.out.println("stock:"+ goodsstock);
 				// reset text fields
 				idTxt.setText(null);
 				nameTxt.setText(null);
