@@ -53,9 +53,9 @@ public class ExLect8 {
 			for (int j = ANSWER_1ST_COL; j < choices.length; j++) {
 				if (choices[j].equals(ans[j - ANSWER_1ST_COL])) {
 					totalMark += 1;
-					System.out.print((j - 1) + ")" + choices[j] + ":" + ans[j - 2] + "=" + "1" + " ");
+					System.out.print((j - 1) + ")" + choices[j] + ":" + ans[j - 2] + "=" + "[1]" + " ");
 				} else {
-					System.out.print((j - 1) + ")" + choices[j] + ":" + ans[j - 2] + "=" + "0" + " ");
+					System.out.print((j - 1) + ")" + choices[j] + ":" + ans[j - 2] + "=" + "[0]" + " ");
 				}
 			}
 

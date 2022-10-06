@@ -33,7 +33,7 @@ public class Menu extends JPanel implements ActionListener {
 		addForm = new AddForm(frame);
 		editForm = new EditForm(frame);
 //		viewForm = new ViewForm(frame);
-//		deleteForm = new DeleteForm(frame);
+		deleteForm = new DeleteForm(frame);
 		
 		int panelWidth = 400;
 		int panelHeight = 300;
@@ -91,9 +91,9 @@ public class Menu extends JPanel implements ActionListener {
 //		}else if(actionCommand.equals(viewString)) {
 //			System.out.println("equals " + viewString);
 //			viewForm.setVisible(true);
-//		}else if(actionCommand.equals(deleteString)) {
-//			System.out.println("equals " + deleteString);
-//			deleteForm.setVisible(true);
+		}else if(actionCommand.equals(deleteString)) {
+			System.out.println("equals " + deleteString);
+			deleteForm.setVisible(true);
 		}else if(actionCommand.equals(exitString)) {
 			System.out.println("equals " + exitString);
 			System.exit(0);
