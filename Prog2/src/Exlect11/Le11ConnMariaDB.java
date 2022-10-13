@@ -1,4 +1,4 @@
-package lect11;
+package Exlect11;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -26,7 +26,7 @@ public class Le11ConnMariaDB {
 		try {
 
 			connection = DriverManager.getConnection(
-					"jdbc:mariadb://202.28.34.205:3306/test", 
+					"jdbc:mariadb://202.28.34.205:3306/db64011211064", 
 					"64011211064", "64011211064");
 
 		} catch (SQLException e) {
