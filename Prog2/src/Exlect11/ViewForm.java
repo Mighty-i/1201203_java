@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 
@@ -85,7 +86,7 @@ public class ViewForm extends JDialog implements ActionListener{
 		Dimension size = viewformlabel.getPreferredSize();
 		viewformlabel.setBounds((width - size.width) / 2, 5, size.width, size.height);
 		size = idLabel.getPreferredSize();
-		idLabel.setBounds(10, 20, size.width, size.height);
+		idLabel.setBounds(137, 45, size.width, size.height);
 //		size = nameLabel.getPreferredSize();
 //		nameLabel.setBounds(10, 50, size.width, size.height);
 //		size = DescriptionLabel.getPreferredSize();
@@ -97,7 +98,7 @@ public class ViewForm extends JDialog implements ActionListener{
 
 		// set sizes and positions for labels
 		size = idTxt.getPreferredSize();
-		idTxt.setBounds(80, 20, size.width, size.height);
+		idTxt.setBounds(158, 42, size.width, size.height);
 //		size = nameTxt.getPreferredSize();
 //		nameTxt.setBounds(80, 50, size.width, size.height);
 //		size = DescriptionTxt.getPreferredSize();
@@ -171,6 +172,10 @@ public class ViewForm extends JDialog implements ActionListener{
 					int stock = rs.getInt("STOCK");
 					Le11Goods goods1 = new Le11Goods(id, name, Description, price, stock);
 					System.out.println("Goods:" + goods.toString());
+					System.out.println(goods1);
+					
+					JOptionPane.showMessageDialog(null, goods1);
+
 				}
 				stmnt.close();
 				con.close();
